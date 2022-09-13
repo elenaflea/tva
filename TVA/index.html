@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVA CALCULATRICE</title>
+    <link rel="icon" href="/images/icon-percent.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:wght@300;700&family=Open+Sans:wght@300;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="column black pt-4">
+        <h1 class="p-2 color">La Calculatrice de TVA simple et efficace</h1> 
+        <object id="my-svg" type="image/svg+xml" data="11_animated.svg" width="300px" height="200px" class="pb-1"></object>
+    </div>
+    <div class="center container1">
+        <div class="column m-5">
+            <h4>Hors Taxe - HT</h4>
+            <input id="ht" type="number" min="0" placeholder="Hors Taxe...">
+            <div class="center p-3">
+                <button id="btn">Calculer TTC</button>
+            </div>
+        </div>
+<img src="images/fleche.png" alt="icon" width="50px">
+        <div class="column m-5">
+            <h4>Taxes Comprises - TTC</h4>
+            <input id="ttcCalcule" type="number" min="0" placeholder="Taxes Comprises...">
+            <div class="center p-3">
+                <button id="btn2">Calculer HT</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="center mt-0">
+        <h4 class="p-2">TVA</h4>
+        <div name="tvaInput" id="tva">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tva" id="inlineRadio1" value="1.2" checked> 
+                <label class="form-check-label" for="inlineRadio1">20%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tva" id="inlineRadio2" value="1.1">
+                <label class="form-check-label" for="inlineRadio2">10%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tva" id="inlineRadio3" value="1.085">
+                <label class="form-check-label" for="inlineRadio3">8.5%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tva" id="inlineRadio4" value="1.055">
+                <label class="form-check-label" for="inlineRadio4">5.5%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tva" id="inlineRadio5" value="1.021">
+                <label class="form-check-label" for="inlineRadio5">2.1%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tva" id="inlineRadio6" value="1.0175">
+                <label class="form-check-label" for="inlineRadio6">1.75%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tva" id="inlineRadio7" value="1.0105">
+                <label class="form-check-label" for="inlineRadio7">1.05%</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="tva" id="inlineRadio8" value="1.009">
+                <label class="form-check-label" for="inlineRadio8">0.90%</label>
+            </div>
+        </div>
+    </div>
+
+        <br>
+
+    <div class="center">
+        <div id="tvaShow" class="column block pb-3">
+            <h4 class="hut p-2">Montant de la TVA</h4>
+            <div class="center">
+                <div><span id="tvaMontant"></span></div>
+                <span>&nbsp€</span>
+            </div>
+        </div>
+    </div>
+    <br>
+
+
+    <div class="link">
+        <a class="fb" href="https://lunacode.fr/" target="_blank"> <img src="images/homeicon-blue.png" alt="elena grondin site web" width="35px"></a>
+        <a class="fb" href="https://www.instagram.com/elena.grondin/?hl=fr" target="_blank"> <img src="images/instaicon-blue.png" alt="instagram" width="35px"></a>
+    </div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+</html>

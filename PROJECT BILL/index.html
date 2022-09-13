@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partager l'Addition</title>
+    
+    <link rel="icon" href="icons8-purse-30.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Open+Sans:wght@300;600;700;800&family=Style+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="container">
+    <h1>Au Restaurant</h1>
+    <div class="iconbox">
+        <hr>
+        <img src="icons8-purse-30 white.png" alt="icon" width="25px" height="25px">
+        <hr>
+    </div>
+    <object id="my-svg" type="image/svg+xml" data="1_animated (3).svg"></object>
+    <form action="">
+        <div class="center">
+            <img src="icons8-euro-30.png" alt="icon" width="25px" height="25px">
+            <img src="icons8-euro-30.png" alt="icon" width="25px" height="25px">
+            <img src="icons8-euro-30.png" alt="icon" width="25px" height="25px">
+            <p>&nbsp Addition &nbsp</p>
+            <img src="icons8-euro-30.png" alt="icon" width="25px" height="25px">
+            <img src="icons8-euro-30.png" alt="icon" width="25px" height="25px">
+            <img src="icons8-euro-30.png" alt="icon" width="25px" height="25px">
+        </div>
+        <input type="text" placeholder="Note..." id="bill"></p>
+        <br>
+        <div class="center">
+            <img src="icons8-smiling-24.png" alt="icon" width="23px" height="23px">
+            <img src="icons8-smiling-24.png" alt="icon" width="23px" height="23px">
+            <img src="icons8-smiling-24.png" alt="icon" width="23px" height="23px">
+            <p>&nbsp Combien personnes? &nbsp</p>
+            <img src="icons8-smiling-24.png" alt="icon" width="23px" height="23px">
+            <img src="icons8-smiling-24.png" alt="icon" width="23px" height="23px">
+            <img src="icons8-smiling-24.png" alt="icon" width="23px" height="23px">
+        </div>
+        <input type="text" id="people" placeholder="Combien personnes...">
+        <br>
+        <p>Avez-vous apprécié notre service?</p>
+        <button id="addTip">Laisser le pourboir</button>
+        <select id="tip">
+            <option value="0.00" disabled>Choisir une option</option>
+            <option value="0.30">💙💙💙Génial! 30% </option>
+            <option value="0.20">💙💙Bon service! 20%</option>
+            <option value="0.10">💙Ok! 10%</option>
+            <option value="0.00" selected>Pas de pourboir.</option>
+        </select>
+    <button id="btn">Calculer</button>
+    <div id="showTotalAmountToPay">
+        <div id="billSplit">
+            <p> <b>Note</b> </p>
+            <b> <span id="dividedBill"></span> </b>
+            <span>€</span>
+            <span>par personne</span>
+        </div>
+        <div id="totalTip">
+            <p> <b>Pourboir</b> </p>
+            <b><span id="dividedTip"></span> </b> 
+            <span>€</span>
+            <span>par personne</span>
+        </div>
+        <div id="totalAmount">
+            <p> <b>Total</b> </p>
+            <b><span id="billAndTip"></span> </b> 
+            <span>€</span>
+            <span>par personne</span>
+        </div>
+    </div>
+</form>
+</div>
+
+<div class="link">
+    <a class="fb" href="https://grondin.glitch.me/" target="_blank"> <img src="homeiconwhite.png" alt="elena grondin site web" width="35px"></a>
+    <a class="fb" href="https://www.instagram.com/elena.grondin/?hl=fr" target="_blank"> <img src="instaiconwhite.png" alt="instagram" width="35px"></a>
+</div>
+
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="script.js"></script>
+</body>
+</html>
